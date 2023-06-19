@@ -64,6 +64,12 @@ android {
         }
     }
 
+    sourceSets {
+        named("main") {
+            jniLibs.srcDirs("libs")
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
